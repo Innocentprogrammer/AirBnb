@@ -7,7 +7,7 @@ interface ButtonProps {
     disabled?: boolean;
     outline?: boolean;
     small?: boolean;
-    icon?: boolean;
+    icon?: IconType;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
     {Icon && (
         <Icon 
         size = {24} 
-        classname = " absolute left-4 top-3" />
+        className = " absolute left-4 top-3" />
     )}
         {label}
     </button>
